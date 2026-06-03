@@ -1,11 +1,10 @@
 # SharePoint_File_Tree_Export
 Requires PowerShell 7+
-Pre-reqs: Generate certificate > Add the app to the tenancy as PNP.Online is no longer added by default.
 
 Open PS7 as admin and install the PNP Module
 Install-Module PnP.PowerShell -Scope CurrentUser -Force
 
-Register the certificate and app
+Register the certificate and app on the tenancy
 Register-PnPEntraIDApp -ApplicationName "SPO-StorageReport" `
     -Tenant <client>.onmicrosoft.com `
     -Store CurrentUser `
